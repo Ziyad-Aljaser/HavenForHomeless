@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShelterLink - Create New Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="availableServices.html">Available Shelters/Services</a></li>
+                <li><a href="createService.html">Create New Service</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Create New Service</h1>
+        <form id="create-service-form" action="/path/to/server/endpoint" method="POST">
+            <label for="service-name">Service Name:</label>
+            <input type="text" id="service-name" name="service-name" required>
+
+            <label for="service-description">Service Description:</label>
+            <textarea id="service-description" name="service-description" required></textarea>
+
+            <label for="service-location">Service Location:</label>
+            <input type="text" id="service-location" name="service-location" required>
+
+            <label for="service-hours">Service Hours:</label>
+            <input type="text" id="service-hours" name="service-hours" required>
+
+            <button type="submit">Create Service</button>
+        </form>
+    </main>
+    <footer>
+        <p>©2023 ShelterLink</p>
+    </footer>
+</body>
+
+</html>
