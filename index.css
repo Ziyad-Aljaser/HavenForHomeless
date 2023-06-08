@@ -30,8 +30,9 @@
 }
 
 .header-blue .navbar .navbar-brand {
+  font-size: 25px;
   font-weight:bold;
-  color:inherit;
+  padding: 10px;
 }
 
 .header-blue .navbar .navbar-brand:hover {
@@ -74,16 +75,26 @@
 }
 
 @media (min-width: 768px) {
-  .header-blue .navbar-nav .nav-link {
+  .header-blue .navbar-nav .nav-link.active {
     padding-left:.7rem;
     padding-right:.7rem;
+  }
+
+  .header-blue .navbar-nav .nav-link.active:hover {
+    /* Add your hover effects here. For example: */
+    color: #777777;
   }
 }
 
 @media (min-width: 992px) {
-  .header-blue .navbar-nav .nav-link {
+  .header-blue .navbar-nav .nav-link.active {
     padding-left:1.2rem;
     padding-right:1.2rem;
+  }
+
+  .header-blue .navbar-nav .nav-link.active:hover {
+    /* Add your hover effects here. For example: */
+    color: #777777;
   }
 }
 
