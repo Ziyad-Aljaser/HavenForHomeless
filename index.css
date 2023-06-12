@@ -1,15 +1,10 @@
 .header-blue {
   background:linear-gradient(135deg, #172a74, #21a9af);
   background-color:#184e8e;
-  padding-bottom:80px;
   font-family:'Source Sans Pro', sans-serif;
-}
-
-@media (min-width:768px) {
-  .header-blue {
-    height: 100vh;
-    padding-bottom:120px;
-  }
+  min-height: 100vh;
+  width: 100vw;
+  padding-bottom:1rem;
 }
 
 .header-blue .navbar {
@@ -30,13 +25,9 @@
 }
 
 .header-blue .navbar .navbar-brand {
-  font-size: 25px;
+  font-size: 20px;
   font-weight:bold;
   padding: 10px;
-}
-
-.header-blue .navbar .navbar-brand:hover {
-  color:#f0f0f0;
 }
 
 .header-blue .navbar .navbar-collapse {
@@ -51,14 +42,18 @@
   }
 }
 
+.header-blue .navbar .navbar-collapse:hover {
+  color: #777777;
+}
+
 .header-blue .navbar .navbar-collapse span .login {
-  color:#d9d9d9;
+  color:#fff;
   margin-right:.5rem;
   text-decoration:none;
 }
 
 .header-blue .navbar .navbar-collapse span .login:hover {
-  color:#fff;
+  color: #777777;
 }
 
 .header-blue .navbar .navbar-toggler {
@@ -81,7 +76,7 @@
   }
 
   .header-blue .navbar-nav .nav-link.active:hover {
-    /* Add your hover effects here. For example: */
+    /* Added hover effects here */
     color: #777777;
   }
 }
@@ -93,7 +88,7 @@
   }
 
   .header-blue .navbar-nav .nav-link.active:hover {
-    /* Add your hover effects here. For example: */
+    /* Added hover effects here */
     color: #777777;
   }
 }
@@ -127,7 +122,7 @@
 }
 
 .header-blue .action-button:hover {
-  color:#fff;
+  color: #777777;
 }
 
 .header-blue .navbar .form-inline label {
@@ -174,7 +169,7 @@
 
 @media (min-width:992px) {
   .header-blue .hero h1 {
-    margin-top:190px;
+    margin-top:100px;
     margin-bottom:24px;
     line-height:1.2;
   }
