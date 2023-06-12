@@ -224,3 +224,18 @@
   opacity:0.2;
 }
 
+/* Used to style the footer */
+footer {
+  position: fixed;
+  font-family:'Source Sans Pro', sans-serif;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #172a74, #21a9af);
+  color: white;
+  text-align: center; 
+}
+
+footer p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
