@@ -202,7 +202,7 @@
     background-color: #aed7e9; /* Light blue, adjust as needed */
     border-radius: 15px; /* Adjust as needed for desired roundness */
     padding: 20px; /* Adjust as needed for desired padding */
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.15); /* Optional: Adds a subtle shadow for depth */
+    box-shadow: 0px 0px 10px rgba(0,0,0,1); /* Optional: Adds a subtle shadow for depth */
 }
 
   /* Used to style the footer */
