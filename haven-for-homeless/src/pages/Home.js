@@ -1,7 +1,8 @@
 import React from 'react';
 import './Home.css';
 import Home_Image from '../assets/img/Homeland_Image.png';
-import Nav from '../nav';
+import Nav from '../Nav';
+import Footer from '../Footer';
 
 function Home(){
 
@@ -28,9 +29,7 @@ function Home(){
                             </div>
                         </div>
                     </div>
-                    <footer>
-                        <p>&copy; 2023 HavenForHomeless. All rights reserved.</p>
-                    </footer>
+                    <Footer/>
                 </div>
 
             </main>
