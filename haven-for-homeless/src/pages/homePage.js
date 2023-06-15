@@ -1,7 +1,7 @@
 import React from 'react';
-import './Home.css';
+import './homePage.css';
 import Home_Image from '../assets/img/Homeland_Image.png';
-import Nav from '../Nav';
+import Nav from '../navBar';
 import Footer from '../Footer';
 
 function Home(){
