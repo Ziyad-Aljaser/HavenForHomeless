@@ -1,6 +1,5 @@
 import React from 'react';
-import './availableServices.css'; 
-import Icon from '../assets/img/Icon.png';
+import '../Styles/availableServices.css'; 
 import Shelters from '../assets/img/shelters.jfif';
 import Food from '../assets/img/food.jpg';
 import Clothes from '../assets/img/clothes.jpg';
@@ -8,30 +7,15 @@ import Money from '../assets/img/Money.webp';
 import Volunteer from '../assets/img/volunteer.png';
 import DonatingClothes from '../assets/img/DonatingClothes.jpg';
 
-function Av() {
+import Nav from '../navBar';
+import Footer from '../Footer';
+
+function AS() {
     return (
         <div>
             <main>
-                <div className="header-blue">
-                    <nav className="navbar navbar-dark navbar-expand-md">
-                        <div className="container">
-                            <img src={Icon} alt="Logo" />
-                            <div className="navbar-brand">HavenForHomeless</div>
-                            <div>
-                                <ul className="navbar-nav">
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="/">Home</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="/about">About Us</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="/contact">Contact Us</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
+                <div className="header-blue-AS">
+                    <Nav/>
                     <header>
                         <h1>For The Homeless</h1>
                     </header>
@@ -83,9 +67,7 @@ function Av() {
                         />
                     </section>
                 </div>
-                <footer>
-                    <p>&copy; 2023 HavenForHomeless. All rights reserved.</p>
-                </footer>
+                <Footer/>
             </main>
         </div>
     )
@@ -102,4 +84,4 @@ function Article({img, altImg, title, description, hours}) {
     )
 }
 
-export default Av;
+export default AS;

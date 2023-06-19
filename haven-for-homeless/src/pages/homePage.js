@@ -1,6 +1,7 @@
 import React from 'react';
-import './homePage.css';
+import '../Styles/homePage.css';
 import Home_Image from '../assets/img/Homeland_Image.png';
+
 import Nav from '../navBar';
 import Footer from '../Footer';
 
@@ -12,19 +13,21 @@ function Home(){
             {/* ======= Start Main ======= */}
             <main>
 
-                <div class="header-blue">
+                <div className="header-blue">
                     <Nav/>
-                    <div class="container hero">
-                        <div class="row">
-                            <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
+                    <div className="container hero">
+                        <div className="row">
+                        <div className="col-12 col-lg-6 col-xl-5 offset-xl-1 mt-5">
                                 <h1>Welcome to HavenForHomeless</h1>
-                                <p>We're dedicated to connecting those in need with local shelters and services. Explore, find help, or contribute to your community today.</p>
+                                <p>We're dedicated to connecting those in need with local shelters and services.
+                                     Explore, find help, or contribute to your community today.
+                                </p>
                                 <a href="detail.html">
-                                    <button class="btn btn-light btn-lg action-button" type="button">Learn More</button>
+                                    <button className="btn btn-light btn-lg action-button" type="button">Learn More</button>
                                 </a>
                             </div>
-                            <div class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block Homeland_Image">
-                                <div class="Shelter"><img src={Home_Image} class="Homeland"/>
+                            <div className="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block Homeland_Image">
+                                <div className="Shelter"><img src={Home_Image} className="Homeland"/>
                                 </div>
                             </div>
                         </div>
