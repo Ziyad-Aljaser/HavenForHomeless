@@ -20,7 +20,7 @@ function Nav(){
                         </li>
 
                         <li class="nav-item" role="presentation"><Link class="nav-link active" to="/newService">New Service</Link></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="detail.html">Details</a></li>
+                        <li class="nav-item" role="presentation"><Link class="nav-link active" to="/detail">Details</Link></li>
                     </ul>
                     <span class="ml-auto"> <a href="#" class="login">Log In</a></span><a class="btn btn-light action-button" role="button" href="#">Sign Up</a>
                 </div>

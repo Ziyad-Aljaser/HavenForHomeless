@@ -1,7 +1,8 @@
 import './App.css';
 import Home from "./pages/homePage";
-import Av from "./pages/availableServices";
+import AS from "./pages/availableServices";
 import CreateNew from "./pages/createNew";
+import Detail from "./pages/detailPage";
 import {BrowserRouter,Routes, Route} from "react-router-dom";
 
 
@@ -13,9 +14,9 @@ function App() {
 
       <Routes>
         <Route path="/" element= {<Home/>}/>
-        <Route path="/availableServices" element= {<Av/>}/>
+        <Route path="/availableServices" element= {<AS/>}/>
         <Route path="/newService" element= {<CreateNew/>}/>
-        {/* <Route path="/Detail" element= {<Detail/>}/> */}
+        <Route path="/detail" element= {<Detail/>}/>
 
 
       </Routes>
