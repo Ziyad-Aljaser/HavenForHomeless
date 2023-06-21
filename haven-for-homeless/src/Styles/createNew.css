@@ -46,7 +46,7 @@
 .form-control {
     background: linear-gradient(135deg, #aed7e9, #d1eaf3); /* Lighter blue gradient */
     background-color: #ebeff1;
-    color: #ebeff1;
+    color: black;
     border: none;
 }
 
