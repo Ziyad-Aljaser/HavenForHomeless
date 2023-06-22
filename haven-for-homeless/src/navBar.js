@@ -22,7 +22,9 @@ function Nav(){
                         <li class="nav-item" role="presentation"><Link class="nav-link active" to="/newService">New Service</Link></li>
                         <li class="nav-item" role="presentation"><Link class="nav-link active" to="/detail">Details</Link></li>
                     </ul>
-                    <span class="ml-auto"><Link class="login" to="/login">Login</Link></span><Link class="btn btn-light action-button" to="/signUp">Sign Up</Link> 
+                    <span class="ml-auto"><Link class="login" to="/login">Login</Link></span><Link class="btn btn-light action-button" to="/signUp">Sign Up</Link>
+
+                    {/* <Link to   */}
                 </div>
             </div>
         </nav>	

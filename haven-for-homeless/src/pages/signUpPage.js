@@ -3,7 +3,7 @@ import '../Styles/signUpPage.css';
 import Nav from '../navBar';
 import Footer from '../Footer';
 
-function SignUp() {
+function SsignUp() {
   return (
     <div>
       <main>
@@ -44,4 +44,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default SsignUp;

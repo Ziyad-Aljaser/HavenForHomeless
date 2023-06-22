@@ -3,7 +3,7 @@ import '../Styles/loginPage.css';
 import Nav from '../navBar';
 import Footer from '../Footer';
 
-function Login() {
+function Llogin() {
   return (
     <div>
       <main>
@@ -36,4 +36,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Llogin;

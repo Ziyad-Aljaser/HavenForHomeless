@@ -3,6 +3,11 @@
   height: auto; /* keep the aspect ratio */
 }
 
+.service {
+  border: 2px solid white;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
 
 .header-blue-AS {
   background:linear-gradient(135deg, #172a74, #21a9af);
@@ -52,7 +57,7 @@
 .service-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  grid-gap: 20px; 
   margin: 20px;
   padding: 10px;
   box-sizing: border-box;
