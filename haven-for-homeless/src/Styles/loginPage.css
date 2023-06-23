@@ -69,3 +69,19 @@
 .signUp{
     color: #aed7e9;
 }
+
+.icon-wrapper {
+  position: relative;
+}
+
+.icon-wrapper .form-control {
+    padding-left: 8%;
+}
+
+.icon {
+  position: absolute;
+  top: 45%;
+  left: 10px; /* Adjust the left value as needed to position the icon correctly */
+  transform: translateY(-50%);
+  font-size: 20px; /* Increase this value to make the icon bigger */
+}

@@ -7,6 +7,9 @@ import '../Styles/loginPage.css';
 import Nav from '../navBar';
 import Footer from '../Footer';
 
+import { FaEnvelope } from 'react-icons/fa';
+import { FaLock } from 'react-icons/fa';
+
 const Login = ({ setLoggedIn }) => {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
@@ -41,29 +44,37 @@ const Login = ({ setLoggedIn }) => {
                   <h1 className="mb-4 text-center">Login</h1>
                   <form id="create-service-form">
                     <div className="mb-3">
-                      <label htmlFor="email-address" className="form-label">Email address</label>
-                      <input
-                        className="form-control"
-                        id="email-address"
-                        name="email"
-                        type="email"
-                        required
-                        placeholder="Email address"
-                        onChange={(e) => setEmail(e.target.value)}
-                      />
+                      <label htmlFor="email-address" className="form-label">
+                        Email address
+                      </label>
+                      <div className="icon-wrapper">
+                        <i className="icon"><FaEnvelope /></i>
+                        <input
+                          className="form-control"
+                          id="email-address"
+                          name="email"
+                          type="email"
+                          required
+                          placeholder="Email address"
+                          onChange={(e) => setEmail(e.target.value)}
+                        />
+                      </div>
                     </div>
 
                     <div className="mb-3">
                       <label htmlFor="password" className="form-label">Password</label>
-                      <input
-                        className="form-control"
-                        id="password"
-                        name="password"
-                        type="password"
-                        required
-                        placeholder="Password"
-                        onChange={(e) => setPassword(e.target.value)}
-                      />
+                        <div className="icon-wrapper">
+                          <i className="icon"><FaLock /></i>
+                          <input
+                            className="form-control"
+                            id="password"
+                            name="password"
+                            type="password"
+                            required
+                            placeholder="Password"
+                            onChange={(e) => setPassword(e.target.value)}
+                          />
+                      </div>
                     </div>
 
                     <div>
