@@ -63,5 +63,9 @@
 }
 
 .form-control::placeholder { /* Placeholder text color */
-    color: #ebeff1;
+    color: #333333;
+}
+
+.signUp{
+    color: #aed7e9;
 }

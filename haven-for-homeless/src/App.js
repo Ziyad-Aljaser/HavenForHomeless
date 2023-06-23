@@ -5,9 +5,8 @@ import AS from './pages/availableServices';
 import CreateNew from './pages/createNew';
 import Detail from './pages/detailPage';
 import SsignUp from './pages/signUpPage';
-import Llogin from './pages/loginPage';
+import Login from './pages/loginPage';
 import SignUp from './pages/Signup';
-import Login from './pages/Login';
 
 function App() {
   const [isLoggedIn, setLoggedIn] = useState(false);
@@ -28,7 +27,6 @@ function App() {
             <Route path="/newService" element={<CreateNew />} />
             <Route path="/detail" element={<Detail />} />
             <Route path="/signUp" element={<SsignUp />} />
-            <Route path="/login" element={<Llogin />} />
           </Routes>
         )}
       </div>
