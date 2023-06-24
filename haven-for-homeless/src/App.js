@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, createContext, useContext } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/homePage';
 import AS from './pages/availableServices';
@@ -7,28 +7,33 @@ import Detail from './pages/detailPage';
 import Signup from './pages/signUpPage';
 import Login from './pages/loginPage';
 
+// Create context
+export const AuthContext = createContext();
+
 function App() {
   const [isLoggedIn, setLoggedIn] = useState(false);
 
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Routes>
-          <Route path="/signUp" element={<Signup />} />
-          <Route path="/login" element={<Login setLoggedIn={setLoggedIn} />} />
-          {!isLoggedIn && <Route path="/" element={<Home />} />}
-        </Routes>
-
-        {isLoggedIn && (
+    <AuthContext.Provider value={{ isLoggedIn, setLoggedIn }}>
+      <BrowserRouter>
+        <div className="App">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/availableServices" element={<AS />} />
-            <Route path="/newService" element={<CreateNew />} />
-            <Route path="/detail" element={<Detail />} />
+            <Route path="/signUp" element={<Signup />} />
+            <Route path="/login" element={<Login />} />
+            {!isLoggedIn && <Route path="/" element={<Home />} />}
           </Routes>
-        )}
-      </div>
-    </BrowserRouter>
+
+          {isLoggedIn && (
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/availableServices" element={<AS />} />
+              <Route path="/newService" element={<CreateNew />} />
+              <Route path="/detail" element={<Detail />} />
+            </Routes>
+          )}
+        </div>
+      </BrowserRouter>
+    </AuthContext.Provider>
   );
 }
 

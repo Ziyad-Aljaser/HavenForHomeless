@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
-import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../firebaseConfig';
+import React, { useState, useContext  } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../firebaseConfig';
+
+import { AuthContext } from '../App';
 import '../Styles/loginPage.css';
 import Nav from '../navBar';
 import Footer from '../Footer';
@@ -10,10 +12,13 @@ import Footer from '../Footer';
 import { FaEnvelope } from 'react-icons/fa';
 import { FaLock } from 'react-icons/fa';
 
-const Login = ({ setLoggedIn }) => {
+const Login = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
+  // Access setLoggedIn from AuthContext
+  const { setLoggedIn } = useContext(AuthContext);
 
   const onLogin = (e) => {
     e.preventDefault();
