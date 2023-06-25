@@ -6,6 +6,9 @@ import CreateNew from './pages/createNew';
 import Detail from './pages/detailPage';
 import Signup from './pages/signUpPage';
 import Login from './pages/loginPage';
+import SignOutPage from './pages/signOutPage';
+
+
 
 // Create context
 export const AuthContext = createContext();
@@ -20,6 +23,7 @@ function App() {
           <Routes>
             <Route path="/signUp" element={<Signup />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/signout" element={<SignOutPage />} /> {/* corrected line */}
             {!isLoggedIn && <Route path="/" element={<Home />} />}
           </Routes>
 
@@ -38,3 +42,4 @@ function App() {
 }
 
 export default App;
+
