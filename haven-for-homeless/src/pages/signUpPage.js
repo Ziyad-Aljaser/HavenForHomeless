@@ -15,9 +15,9 @@ import { FaLock } from 'react-icons/fa';
 const Signup = () => {
     const navigate = useNavigate();
  
+    const [username, setUsername] = useState('');
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('');
-    const [username, setUsername] = useState('');
  
     const onSubmit = async (e) => {
       e.preventDefault()
