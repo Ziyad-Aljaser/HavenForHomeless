@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 
 function Nav(){
     const { isLoggedIn, user  } = useContext(AuthContext);
-    console.log(user.username)
     return(
 
         <nav class="navbar navbar-dark navbar-expand-md">
