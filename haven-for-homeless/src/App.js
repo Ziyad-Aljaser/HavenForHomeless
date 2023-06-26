@@ -8,14 +8,11 @@ import Signup from './pages/signUpPage';
 import Login from './pages/loginPage';
 import SignOutPage from './pages/signOutPage';
 
-
-
-// Create context
 export const AuthContext = createContext();
 
 function App() {
   const [isLoggedIn, setLoggedIn] = useState(false);
-  const [user, setUser] = useState(null);  // Add a state for the user
+  const [user, setUser] = useState(null); 
 
   return (
     <AuthContext.Provider value={{ isLoggedIn, setLoggedIn, user, setUser }}>
@@ -24,18 +21,18 @@ function App() {
           <Routes>
             <Route path="/signUp" element={<Signup />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/signout" element={<SignOutPage />} /> {/* corrected line */}
-            {!isLoggedIn && <Route path="/" element={<Home />} />}
-          </Routes>
+            <Route path="/signout" element={<SignOutPage />} />
 
-          {isLoggedIn && (
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/availableServices" element={<AS />} />
-              <Route path="/newService" element={<CreateNew />} />
-              <Route path="/detail" element={<Detail />} />
-            </Routes>
-          )}
+            <Route path="/" element={<Home />} />
+
+            {isLoggedIn && (
+              <>
+                <Route path="/availableServices" element={<AS />} />
+                <Route path="/newService" element={<CreateNew />} />
+                <Route path="/detail" element={<Detail />} />
+              </>
+            )}
+          </Routes>
         </div>
       </BrowserRouter>
     </AuthContext.Provider>
@@ -43,4 +40,3 @@ function App() {
 }
 
 export default App;
-
