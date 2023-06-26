@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 
 function Nav(){
-    const { isLoggedIn } = useContext(AuthContext);
+    const { isLoggedIn, user  } = useContext(AuthContext);
     
     return(
 
@@ -26,11 +26,14 @@ function Nav(){
                                 <li class="nav-item" role="presentation"><Link class="nav-link active" to="/newService">New Service</Link></li>
                                 <li class="nav-item" role="presentation"><Link class="nav-link active" to="/detail">Details</Link></li>
                             </ul>
-                            <span class="ml-auto"><Link class="btn btn-light action-button" to="/signout">Sign Out</Link></span>
+                            <span className="ml-auto"><Link class="user" >Welcome, {user.email} </Link></span> 
+                            {/* {user.username} > {user.email} */}
+                            <Link className="btn btn-light action-button" to="/signout">Sign Out</Link>
                         </>
                     ) : (
                         <>
-                            <span class="ml-auto"><Link class="login" to="/login">Login</Link></span><Link class="btn btn-light action-button" to="/signUp">Sign Up</Link>
+                            <span class="ml-auto"><Link class="login" to="/login">Login</Link></span>
+                            <Link class="btn btn-light action-button" to="/signUp">Sign Up</Link>
                         </>
                     )}
                 </div>

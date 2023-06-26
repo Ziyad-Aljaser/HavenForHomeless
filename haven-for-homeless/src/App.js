@@ -15,9 +15,10 @@ export const AuthContext = createContext();
 
 function App() {
   const [isLoggedIn, setLoggedIn] = useState(false);
+  const [user, setUser] = useState(null);  // Add a state for the user
 
   return (
-    <AuthContext.Provider value={{ isLoggedIn, setLoggedIn }}>
+    <AuthContext.Provider value={{ isLoggedIn, setLoggedIn, user, setUser }}>
       <BrowserRouter>
         <div className="App">
           <Routes>

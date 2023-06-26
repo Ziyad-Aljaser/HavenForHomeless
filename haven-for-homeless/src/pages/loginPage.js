@@ -18,7 +18,7 @@ const Login = () => {
   const [password, setPassword] = useState('');
 
   // Access setLoggedIn from AuthContext
-  const { setLoggedIn } = useContext(AuthContext);
+  const { setLoggedIn, setUser  } = useContext(AuthContext);
 
   const onLogin = (e) => {
     e.preventDefault();
@@ -28,6 +28,8 @@ const Login = () => {
         const user = userCredential.user;
         console.log(user);
         setLoggedIn(true);
+        setUser({ email: user.email }); // Store email in the context
+        // setUser({ username: user.displayName }); // Store username in the context
         navigate('/');
       })
       .catch((error) => {
