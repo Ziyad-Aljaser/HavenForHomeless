@@ -12,9 +12,12 @@ function Home() {
 
   // Fetching data
   useEffect(() => {
-    fetch(process.env.PUBLIC_URL + '/package.json')
+    fetch(process.env.PUBLIC_URL + '/tasks.json')
       .then(response => response.json())
-      .then(data => setData(data))
+      .then(data => {
+        setData(data);
+        console.log(data);
+      })
       .catch(error => console.error('Error:', error));
   }, []);
 
@@ -42,6 +45,20 @@ function Home() {
                 </div>
               </div>
             </div>
+
+            {/* WE COMMINTING THE MAPPING OVER DATA BECAUSE IT DID NOT LOOK GOOD ON OUR WEBSITE
+            HOEVER, IT WORKS %100.*/}
+
+            {/* Start: Mapping over data */}
+            {/* {data.map(item => (
+              <div key={item.id}>
+                <h2>{item.title}</h2>
+                <p>{item.description}</p>
+                <p>{item.Hours}</p>
+              </div>
+            ))} */}
+            {/* End: Mapping over data */}
+
           </div>
           <Footer />
         </div>
