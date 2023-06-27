@@ -94,5 +94,4 @@ function Article({ img, altImg, title, description, hours }) {
     );
   }
   
-
 export default AS;
