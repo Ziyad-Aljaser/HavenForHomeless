@@ -1,6 +1,6 @@
 .service img {
-  width: 100%; /* or any width that you want */
-  height: auto; /* keep the aspect ratio */
+  width: 100%; 
+  height: auto; 
 }
 
 .service {

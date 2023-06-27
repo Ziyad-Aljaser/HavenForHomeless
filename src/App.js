@@ -25,14 +25,15 @@ function App() {
 
             <Route path="/" element={<Home />} />
 
-            {isLoggedIn && (
-              <>
-                <Route path="/availableServices" element={<AS />} />
-                <Route path="/newService" element={<CreateNew />} />
-                <Route path="/detail" element={<Detail />} />
-              </>
-            )}
-          </Routes>
+            <Route path="/detail" element={<Detail />} />
+
+    {isLoggedIn && (
+        <>
+            <Route path="/availableServices" element={<AS />} />
+            <Route path="/newService" element={<CreateNew />} />
+        </>
+    )}
+</Routes>
         </div>
       </BrowserRouter>
     </AuthContext.Provider>
