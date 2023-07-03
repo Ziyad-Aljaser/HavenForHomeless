@@ -6,6 +6,9 @@ import Home_Image from '../assets/img/Homeland_Image.png';
 import Nav from '../navBar';
 import Footer from '../Footer';
 
+import {Animated} from "react-animated-css";
+
+
 function Home(){
 
     return(
@@ -18,18 +21,24 @@ function Home(){
                     <Nav/>
                     <div className="container hero">
                         <div className="row">
+                            
                             <div className="col-12 col-lg-6 col-xl-5 offset-xl-1 mt-5">
-                                <h1>Welcome to HavenForHomeless</h1>
-                                <p>We're dedicated to connecting those in need with local shelters and services.
-                                     Explore, find help, or contribute to your community today.
-                                </p>
-                                <Link to="/detail">
-                                    <button className="btn btn-light btn-lg action-button" type="button">Learn More</button>
-                                </Link>
+                                <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
+                                    <h1>Welcome to HavenForHomeless</h1>
+                                    <p>We're dedicated to connecting those in need with local shelters and services.
+                                        Explore, find help, or contribute to your community today.
+                                    </p>
+                                    <Link to="/detail">
+                                        <button className="btn btn-light btn-lg action-button" type="button">Learn More</button>
+                                    </Link>
+                                </Animated>
                             </div>
+
                             <div className="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block Homeland_Image">
-                                <div className="Shelter"><img src={Home_Image} className="Homeland"/>
-                                </div>
+                                <Animated animationIn="bounceInRight" animationOut="fadeOut" isVisible={true}>
+                                    <div className="Shelter"><img src={Home_Image} className="Homeland"/>
+                                    </div>
+                                </Animated>
                             </div>
                         </div>
                     </div>
