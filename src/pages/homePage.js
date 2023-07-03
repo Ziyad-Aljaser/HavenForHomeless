@@ -17,12 +17,12 @@ function Home(){
             {/* ======= Start Main ======= */}
             <main>
 
-                <div className="header-blue">
+                <div className="header-blue-HP">
                     <Nav/>
                     <div className="container hero">
                         <div className="row">
                             
-                            <div className="col-12 col-lg-6 col-xl-5 offset-xl-1 mt-5">
+                            <div className="col-12 col-lg-6 col-xl-5 offset-xl-1">
                                 <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
                                     <h1>Welcome to HavenForHomeless</h1>
                                     <p>We're dedicated to connecting those in need with local shelters and services.

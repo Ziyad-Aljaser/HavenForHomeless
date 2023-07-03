@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 import '../Styles/detailPage.css';
 
@@ -27,7 +26,6 @@ const Card = ({ title, serviceName, description }) => {
                     <div className="card-body">
                         <h5 className="card-title">Service Name: {serviceName}</h5>
                         <p className="card-text">{description}</p>
-                        <Link className="btn btn-light action-button" to="/">Go back</Link>
                     </div>
                 )}
             </div>
