@@ -10,7 +10,7 @@ function Nav(){
     return(
         <nav className="navbar navbar-dark navbar-expand-md">
             <div className="container">
-                <div><img src={Home_Icon}/></div>
+                <div><Link to="/"><img src={Home_Icon}/></Link></div>
                 <div><Link className="navbar-brand" to="/">HavenForHomeless</Link></div>
                 <button className="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
                     <span className="sr-only">Toggle navigation</span><span className="navbar-toggler-icon"></span>
