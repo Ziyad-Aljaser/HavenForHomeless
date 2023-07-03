@@ -118,7 +118,7 @@ const onSubmit = async (e) => {
                                 </form>
                                 <p className="text-sm text-white text-center">
                                     Already have an account?{' '}
-                                    <NavLink to="/login" className="signIp">
+                                    <NavLink to="/login" className="LoginSignUp">
                                         Sign in
                                     </NavLink>
                                 </p>  

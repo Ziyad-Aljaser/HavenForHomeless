@@ -11,6 +11,17 @@
   text-align:center;
 }
 
+@media (min-width:320px) {
+  .header-blue .hero {
+    margin-top:60px;
+    text-align:left;
+  }
+  .header-blue .hero .row h1 {
+    color:#fff;
+    font-size:30px;
+  }
+}
+
 @media (min-width:768px) {
   .header-blue .hero {
     margin-top:60px;

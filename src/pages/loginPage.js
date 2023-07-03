@@ -90,7 +90,7 @@ const Login = () => {
 
                   <p className="text-sm text-white text-center">
                     No account yet?{' '}
-                    <NavLink to="/signup" className="signUp">
+                    <NavLink to="/signup" className="LoginSignUp">
                       Sign up
                     </NavLink>
                   </p>
