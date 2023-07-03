@@ -43,9 +43,9 @@ function Home(){
                         </div>
                     </div>
                     <Footer/>
-                    </div>
+                </div>
 
-</main>
+            </main>
 {/* ======= End Main ======= */}
 
 </div>
