@@ -29,7 +29,7 @@ function Nav(){
                         </>
                     ) : (
                         <>
-                            <span className="ml-auto"><Link className="login" to="/login">Login</Link></span>
+                            <span className="ml-auto"><Link className="login-btn" to="/login">Login</Link></span>
                             <Link className="btn btn-light action-button" to="/signUp">Sign Up</Link>
                         </>
                     )}

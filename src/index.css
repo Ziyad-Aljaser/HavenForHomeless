@@ -17,15 +17,21 @@ body {
   border:none;
 }
 
-#nav-container{
-  padding-left: 0px;
-  padding-right: 0px;
+@media screen and (max-width: 768px) {
+  #nav-container{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 @media (min-width:768px) {
   .navbar {
     padding-top:1rem;
     padding-bottom:1rem;
+  }
+  #nav-container{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -38,6 +44,7 @@ body {
 .navbar .navbar-collapse {
   border-top:1px solid rgba(255,255,255,0.3);
   margin-top:.5rem;
+  padding-top: 1rem;
   text-align: left;
 }
 
@@ -52,13 +59,13 @@ body {
 color: #777777;
 }
 
-.navbar .navbar-collapse span .login {
-color:#fff;
-margin-right:.5rem;
-text-decoration:none;
+.navbar .navbar-collapse span .login-btn {
+  color:#fff;
+  margin-right:.5rem;
+  text-decoration:none;
 }
 
-.navbar .navbar-collapse span .login:hover {
+.navbar .navbar-collapse span .login-btn:hover {
   color: #777777;
 }
 
@@ -94,15 +101,15 @@ text-decoration:none;
 }
 
 @media (min-width: 992px) {
-.navbar-nav .nav-link.active {
-  padding-left:1.2rem;
-  padding-right:1.2rem;
-}
+  .navbar-nav .nav-link.active {
+    padding-left:1.2rem;
+    padding-right:1.2rem;
+  }
 
-.navbar-nav .nav-link.active:hover {
-  /* Added hover effects here */
-  color: #777777;
-}
+  .navbar-nav .nav-link.active:hover {
+    /* Added hover effects here */
+    color: #777777;
+  }
 }
 
 .navbar .navbar-nav > li > .dropdown-menu {
