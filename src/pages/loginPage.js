@@ -6,8 +6,8 @@ import { auth } from '../firebaseConfig';
 
 import { AuthContext } from '../App';
 import '../Styles/loginPage.css';
-import Nav from '../navBar';
-import Footer from '../Footer';
+import Nav from '../components/navBar';
+import Footer from '../components/Footer';
 
 import { FaEnvelope } from 'react-icons/fa';
 import { FaLock } from 'react-icons/fa';

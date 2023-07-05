@@ -1,14 +1,14 @@
 import React from 'react';
 import '../Styles/availableServices.css'; 
-import Shelters from '../assets/img/shelters.jfif';
-import Food from '../assets/img/food.jpg';
-import Clothes from '../assets/img/clothes.jpg';
-import Money from '../assets/img/Money.webp';
-import Volunteer from '../assets/img/volunteer.png';
-import DonatingClothes from '../assets/img/DonatingClothes.jpg';
+import Shelters from '../assets/shelters.jfif';
+import Food from '../assets/food.jpg';
+import Clothes from '../assets/clothes.jpg';
+import Money from '../assets/Money.webp';
+import Volunteer from '../assets/volunteer.png';
+import DonatingClothes from '../assets/DonatingClothes.jpg';
 
-import Nav from '../navBar';
-import Footer from '../Footer';
+import Nav from '../components/navBar';
+import Footer from '../components/Footer';
 
 function AS() {
     return (

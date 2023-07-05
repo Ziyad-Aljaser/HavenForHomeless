@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import { AuthContext } from './App';
+import { AuthContext } from '../App';
 
-import Home_Icon from './assets/img/Icon.png';
+import Home_Icon from '../assets/Icon.png';
 import { Link } from 'react-router-dom';
 
 

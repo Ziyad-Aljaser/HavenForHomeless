@@ -3,8 +3,8 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import {  createUserWithEmailAndPassword, updateProfile   } from 'firebase/auth';
 import { auth } from '../firebaseConfig';
 import '../Styles/signUpPage.css';
-import Nav from '../navBar';
-import Footer from '../Footer';
+import Nav from '../components/navBar';
+import Footer from '../components/Footer';
  
 import { FaUser } from 'react-icons/fa';
 import { FaEnvelope } from 'react-icons/fa';

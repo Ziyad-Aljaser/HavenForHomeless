@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import '../Styles/homePage.css';
-import Home_Image from '../assets/img/Homeland_Image.png';
-import Nav from '../navBar';
-import Footer from '../Footer';
+import Home_Image from '../assets/Homeland_Image.png';
+import Nav from '../components/navBar';
+import Footer from '../components/Footer';
 
 import {Animated} from "react-animated-css";
 

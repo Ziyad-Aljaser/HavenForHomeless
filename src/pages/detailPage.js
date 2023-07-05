@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 
 import '../Styles/detailPage.css';
 
-import Nav from '../navBar';
-import Footer from '../Footer';
+import Nav from '../components/navBar';
+import Footer from '../components/Footer';
 
-import data from './data/detail.json'; 
+import data from '../data/detail.json'; 
 
 
 

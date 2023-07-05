@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Styles/createNew.css'; 
-import Nav from '../navBar';
-import Footer from '../Footer';
+import Nav from '../components/navBar';
+import Footer from '../components/Footer';
 
 function CreateNew() {
   return (
