@@ -1,6 +1,6 @@
 // To start the server:
-// 1- cd **/data
-// 2- node database.js
+// 1- cd backend/app.js
+// 2- node app.js
 // 3- The server start on: http://localhost:3001/api/cards
 
 const express = require('express');
