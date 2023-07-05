@@ -1,6 +1,6 @@
 import React, { useEffect, useContext } from 'react';  
 import { useNavigate } from 'react-router-dom';
-import { getAuth, signOut } from 'firebase/auth';
+import { signOut } from 'firebase/auth';
 import { auth } from '../firebaseConfig';
 import { AuthContext } from '../App'; 
 

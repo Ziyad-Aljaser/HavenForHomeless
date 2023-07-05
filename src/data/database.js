@@ -16,7 +16,7 @@ app.get('/api/cards', async (req, res) => {
     const client = new MongoClient(url);
 
     try {
-        // Connect to the MongoDB cluster
+        // Connect to the MongoDB
         await client.connect();
 
         // Call the function with the needed parameter
@@ -26,7 +26,7 @@ app.get('/api/cards', async (req, res) => {
         console.error(e);
         res.status(500).send('Error connecting to database');
     } finally {
-        // Close the connection to the MongoDB cluster
+        // Close the connection to the MongoDB
         await client.close();
     }
 });
