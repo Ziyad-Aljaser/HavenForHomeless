@@ -31,7 +31,7 @@ const Card = ({ title, serviceName, description }) => {
 }
 
 const fetchCards = () => {
-    return fetch('http://localhost:3001/api/cards')
+    return fetch('https://render-react-jpc3.onrender.com/api/cards')
       .then(response => response.json())
       .catch(error => console.error('Error:', error));
 };
