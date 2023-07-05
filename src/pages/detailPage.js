@@ -5,9 +5,6 @@ import '../Styles/detailPage.css';
 import Nav from '../components/navBar';
 import Footer from '../components/Footer';
 
-import data from '../data/detail.json'; 
-
-
 
 const Card = ({ title, serviceName, description }) => {
     const [showCardBody, setShowCardBody] = useState(false);
@@ -34,20 +31,18 @@ const Card = ({ title, serviceName, description }) => {
 }
 
 const fetchCards = () => {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve(data);
-        }, 1000);
-    });
+    return fetch('http://localhost:3001/api/cards')
+      .then(response => response.json())
+      .catch(error => console.error('Error:', error));
 };
-
+  
 
 function Detail() {
     const [cards, setCards] = useState([]);
 
     useEffect(() => {
         fetchCards().then(data => setCards(data));
-    }, []);
+      }, []);
 
     return (
         <div>   
@@ -59,9 +54,8 @@ function Detail() {
                         <h1 className="mb-4 text-center">Service Details</h1>
                         <div className="row justify-content-center">
 
-                            {cards.map((card, index) => (
-                                <Card 
-                                    key={index}
+                            {cards.map((card) => (
+                                <Card
                                     title={card.title} 
                                     serviceName={card.serviceName} 
                                     description={card.description} 
