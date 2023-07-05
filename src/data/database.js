@@ -1,3 +1,8 @@
+// To start the server:
+// 1- cd **/data
+// 2- node database.js
+// 3- The server start on: http://localhost:3001/api/cards
+
 const express = require('express');
 const cors = require('cors');
 const { MongoClient } = require('mongodb');
