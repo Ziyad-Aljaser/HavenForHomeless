@@ -50,8 +50,10 @@ const onSubmit = async (e) => {
                     <div className="container hero my-5">
                         <div className="row justify-content-center">
                             <div className="col-12 col-md-8 col-lg-6">
-                                <h1 className="mb-4 text-center">Sign Up</h1>
+
                                 <form id="create-service-form" onSubmit={onSubmit}>
+                                    <h1 className="mb-4 text-center">Sign Up</h1>
+                                    <hr className="my-4 thick-line"/>
                                     <div className="mb-3">
                                         <label className="form-label" htmlFor="password">
                                             User Name
@@ -114,14 +116,14 @@ const onSubmit = async (e) => {
                                         type="submit"                        
                                     >  
                                         Sign up                                
-                                    </button>                                          
-                                </form>
-                                <p className="text-sm text-white text-center">
-                                    Already have an account?{' '}
-                                    <NavLink to="/login" className="LoginSignUp">
-                                        Sign in
-                                    </NavLink>
-                                </p>  
+                                    </button>    
+                                    <p className="text-sm text-white text-center">
+                                        Already have an account?{' '}
+                                        <NavLink to="/login" className="LoginSignUp">
+                                            Sign in
+                                        </NavLink>
+                                    </p>                                       
+                                </form> 
                             </div>
                         </div>
                     </div>

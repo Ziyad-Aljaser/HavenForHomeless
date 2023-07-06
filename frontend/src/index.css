@@ -188,6 +188,11 @@ color: #777777;
   color: #ebeff1;
 }
 
+.thick-line {
+  border-top: 3px solid;
+  color: black;
+}
+
 .LoginSignUp{
   color: #aed7e9;
 }

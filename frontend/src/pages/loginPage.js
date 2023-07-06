@@ -47,8 +47,9 @@ const Login = () => {
             <div className="container hero my-5">
               <div className="row justify-content-center">
                 <div className="col-12 col-md-8 col-lg-6">
-                  <h1 className="mb-4 text-center">Login</h1>
                   <form id="create-service-form">
+                    <h1 className="mb-4 text-center">Login</h1>
+                    <hr className="my-4 thick-line"/>
                     <div className="mb-3">
                       <label htmlFor="email-address" className="form-label">
                         Email address
@@ -86,14 +87,14 @@ const Login = () => {
                     <div>
                       <button className="btn btn-light action-button" onClick={onLogin}>Login</button>
                     </div>
+                    <p className="text-sm text-white text-center">
+                      No account yet?{' '}
+                      <NavLink to="/signup" className="LoginSignUp">
+                        Sign up
+                      </NavLink>
+                    </p>
                   </form>
 
-                  <p className="text-sm text-white text-center">
-                    No account yet?{' '}
-                    <NavLink to="/signup" className="LoginSignUp">
-                      Sign up
-                    </NavLink>
-                  </p>
                 </div>
               </div>
             </div>
