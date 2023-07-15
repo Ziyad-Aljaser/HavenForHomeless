@@ -1,7 +1,7 @@
 // To start the server:
 // 1- cd backend
 // 2- node app.js
-// 3- The server start on: http://localhost:3001/api/cards
+// 3- The server starts on: http://localhost:3001/api/cards
 
 require('dotenv').config();
 const express = require('express');
