@@ -102,6 +102,7 @@ This page enables existing users to access their accounts.
   One of the key features of this platform is its cross-platform accessibility. Designed with a responsive layout, it ensures a seamless user experience on various devices such as desktops, laptops, tablets, and smartphones. Regardless of the device used, users can effortlessly navigate through the website, view services, add new services, or access detailed information. This cross-platform compatibility broadens the reach of the platform, making it accessible to a larger audience and hence increasing its impact on homeless assistance
   
   **Ex.**
+
   ![Cross-Platform.jpeg](Screenshots%2FCross-Platform.jpeg)
 
 * **MERN Stack Implementation**
