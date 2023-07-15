@@ -1,8 +1,9 @@
 // To start the server:
-// 1- cd backend/app.js
+// 1- cd backend
 // 2- node app.js
 // 3- The server start on: http://localhost:3001/api/cards
 
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const { MongoClient } = require('mongodb');
@@ -17,7 +18,7 @@ async function listTable(client) {
 }
 
 app.get('/api/cards', async (req, res) => {
-    const url = "mongodb+srv://admin:wjkbalOqwmVnC0ou@cards.nspddif.mongodb.net/Cards?retryWrites=true&w=majority";
+    const url = process.env.MONGODB_API;
     const client = new MongoClient(url);
 
     try {
