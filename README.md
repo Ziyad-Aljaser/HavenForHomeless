@@ -7,6 +7,7 @@
 - [Visuals](#visuals)
 - [Features](#features)
 - [Installation](#installation)
+- [Contributors](#contributors)
 - [Contact](#contact)
 
 
@@ -130,6 +131,15 @@ The server starts on: http://localhost:3001/api/cards
 2- npm install
 3- npm start
 ```
+
+# Contributors
+**This project exists thanks to all the people who contribute.**
+
+<a href="https://github.com/Ziyad-Aljaser/haven-for-homeless/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Ziyad-Aljaser/haven-for-homeless" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
 
 # Contact
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:Ziyad.M.Aljaser@gmail.com)
