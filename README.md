@@ -1,7 +1,12 @@
+**Email Address:** admin@test.com
+
+**Password:** admin123
+
 # Table of Contents
 - [About The Project](#about-the-project)
     - [Project Title](#project-title)
     - [Description](#description)
+    - [User Manual](#user-manual)
     - [Built With](#built-with)
     - [Project Tree Structure](#project-tree-structure)
 - [Visuals](#visuals)
@@ -23,6 +28,9 @@ The website is built on the MERN stack - MongoDB, Express, React, and Node.js. I
 The backend of this project utilizes Express.js to run an API server and fetch data from MongoDB. It is important to note that the project is logically separated into two primary folders - 'backend' and 'frontend', for a clean and clear separation of concerns.
 
 For deployment, the backend is hosted on Render, while the frontend is hosted on Netlify. This project embodies our commitment to utilize technology in creating meaningful social impacts, directly aiming to alleviate the issue of homelessness.
+
+## User Manual
+https://drive.google.com/file/d/1jX2EcmEcDGaPgDxir7MTI-0gMHrF5cIl/view?usp=sharing
 
 ## Built With
 * **Backend**
